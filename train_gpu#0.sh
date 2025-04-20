@@ -1,0 +1,14 @@
+CUDA_VISIBLE_DEVICES=0 python main_multi.py \
+    --dataset voc12 \
+    --bsize 16 \
+    --lr 1e-5 \
+    --num_epochs 10 \
+    --offset_size 80 \
+    --coeff 3 \
+    --loss_coeff 1 \
+    --ratio 0.2 \
+    --box_offset 80 \
+    --topk 1 \
+    --LS True \
+    --LS_coeff 20 \
+    --bound 4
